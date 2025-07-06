@@ -6,6 +6,10 @@ title: "Experience"
 
 ### Masters Degree
 
+![](images/clipboard-1688063020.png)
+
 Arjun has completed a Masters degree, majoring in Data Science and Analytics, at Singapore Management University. The MITB Program is ranked 24th in the world for Analytics masters.
 
-During this masters degree, he gained valuable hands-on experience with essential data science techniques and in multiple analytical domains.
+During this masters degree, he gained valuable hands-on experience with essential data science techniques and in multiple analytical domains including Geospatial Analytics, Text Analytics and NLP, Customer and Market Analytics.
+
+Beyond this, he was able to complete projects using a variety of tools such as Python, R, Excel, Power BI, and SAS Viya. The flexibility provided by the course also enabled Arjun to gain valuable experience in the world of Financial Technologies (FinTech), learning back-testing methods, key market indicators and risk management methods when working in Financial Service Institutions.
