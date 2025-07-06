@@ -1,5 +1,17 @@
 ---
 title: "Home Page"
+about:
+  template: jolla
+  links:
+    - icon: github
+      text: Github
+      href: https://github.com/arjxn11
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/arjvn/
+    - icon: envelope-fill
+      text: Email
+      href: mailto:arjxn11@gmail.com
 ---
 
 Welcome to Arjun's website, we are glad to have you here!
@@ -8,6 +20,4 @@ Here you can find descriptions and files relating to projects he has completed i
 
 Beyond this, you will be able to find his details should you be interested in contacting him!
 
-```{r}
-1 + 1
-```
+"It always seems impossible until its done."
