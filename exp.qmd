@@ -1,5 +1,8 @@
 ---
 title: "Experience"
+format:
+  html:
+    css: styles.css 
 ---
 
 ## Education
