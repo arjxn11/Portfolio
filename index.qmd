@@ -1,10 +1,12 @@
 ---
-title: "Portfolio"
+title: "Home Page"
 ---
 
-This is a Quarto website.
+Welcome to Arjun's website, we are glad to have you here!
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Here you can find descriptions and files relating to projects he has completed in the past, and some stuff that he is working on.
+
+Beyond this, you will be able to find his details should you be interested in contacting him!
 
 ```{r}
 1 + 1
