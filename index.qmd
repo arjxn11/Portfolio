@@ -14,7 +14,7 @@ about:
       href: mailto:arjxn11@gmail.com
     - icon: file-pdf
       text: Resume
-      href: files/Resume.pdf
+      href: Documents/Resume.pdf
 ---
 
 Welcome to Arjun's website, we are glad to have you here!
