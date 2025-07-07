@@ -27,14 +27,38 @@ With transactional data and the vast amount of rows, there is a lot of false dat
 
 After data cleaning, the first thing done was some exploratory analysis to gain a better idea of the customer base of the company and how well they perform with regards to customer retention.
 
+From this we identified the most common age group of customers (26-45) and average age (39). We also identified the most popular products of the brand. Beyond this, we were able to determine the customer retention rate, that is the amount of customers that have purchased more than once. Then, using their customer IDs, we were able to identify the products that returning customers often buy.
+
+Identifying these details allows the team at Escentials to create better advertising/marketing strategies. For example, they can push the products bought by returning customers more than they do other products, or add discounts for products that customers don't buy more than once.
+
 ##### Customer Segmentation
 
 The customers were segmented using RFM (Recency, Frequency, Monetary) segmentation techniques. This technique splits users and gives them different scores on a scale from 1-5 based on how recently they made their last purchase, how often they purchase, and how much money they have spent with the company in the past. This is then combined to generate different bands, such as 555 for the most loyal customers, and 111 for the customers with the least scores in each department.
 
 Using this, Arjun was able to generate insights for the team at Escentials, identifying the most common products being purchased by the most loyal customers, understanding the frequency of it, and presenting it to the team at Escentials. Information like this allows them to create better informed marketing strategies to improve the RFM scores of other customers that aren't so loyal.
 
+![](images/clipboard-2959740813.png)
+
 ##### Product Recommendation System
 
 For the recommendation system, Collaborative Filtering techniques were adopted. This technique is generally used to predict user preferences based on the preferences of similar users, based on their segments, such as by RFM, geolocation, etc.
 
 We split the provided data into an 80/20 training/test split and trained our model. We tested to see if the accuracy of the recommendations on the 'unseen' data and discovered a 20% improvement in precision compared to more traditional models.
+
+![](images/clipboard-1979477919.png)
+
+##### Market Basket Analysis
+
+Market Basket Analysis allowed us to identify strong product associations with several supporting metrics such as confidence, lift, and support. These metrics allowed us to gain a better idea of the product association, rather than just identifying the co-occurences of the products.
+
+We were able to identify the likelihood that product A is purchased given product B is in the basket, and vice versa. The model we created allowed us to set thresholds based on which we see product associations that are stronger than the set threshold only.
+
+These details allow the team at Escentials to create better promotions, such as discounts when product A and B are purchased together, then you get a 5% discount.
+
+![](images/clipboard-1844049376.png)
+
+### Conclusion
+
+To wrap up the project, Arjun had the opportunity to present his findings and his model in front of the team from Escentials. We had an interactive session where they were able to learn more about our model as well. A comprehensive report was developed detailing our findings, our code, and methodology.
+
+If you have any queries, or would like to know more, feel free to send me a message via LinkedIn or Email!

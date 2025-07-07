@@ -107,7 +107,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="./escentials.html">
- <span class="dropdown-text">Essentials for Escentials- SMU-X</span></a>
+ <span class="dropdown-text">Essentials for Escentials SMU-X</span></a>
   </li>  
     </ul>
   </li>
@@ -131,6 +131,7 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#methodology" id="toc-methodology" class="nav-link" data-scroll-target="#methodology">Methodology</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -176,20 +177,36 @@ ul.task-list li input[type="checkbox"] {
 <section id="exploratory-data-analysis" class="level5">
 <h5 class="anchored" data-anchor-id="exploratory-data-analysis">Exploratory Data Analysis</h5>
 <p>After data cleaning, the first thing done was some exploratory analysis to gain a better idea of the customer base of the company and how well they perform with regards to customer retention.</p>
+<p>From this we identified the most common age group of customers (26-45) and average age (39). We also identified the most popular products of the brand. Beyond this, we were able to determine the customer retention rate, that is the amount of customers that have purchased more than once. Then, using their customer IDs, we were able to identify the products that returning customers often buy.</p>
+<p>Identifying these details allows the team at Escentials to create better advertising/marketing strategies. For example, they can push the products bought by returning customers more than they do other products, or add discounts for products that customers don’t buy more than once.</p>
 </section>
 <section id="customer-segmentation" class="level5">
 <h5 class="anchored" data-anchor-id="customer-segmentation">Customer Segmentation</h5>
 <p>The customers were segmented using RFM (Recency, Frequency, Monetary) segmentation techniques. This technique splits users and gives them different scores on a scale from 1-5 based on how recently they made their last purchase, how often they purchase, and how much money they have spent with the company in the past. This is then combined to generate different bands, such as 555 for the most loyal customers, and 111 for the customers with the least scores in each department.</p>
 <p>Using this, Arjun was able to generate insights for the team at Escentials, identifying the most common products being purchased by the most loyal customers, understanding the frequency of it, and presenting it to the team at Escentials. Information like this allows them to create better informed marketing strategies to improve the RFM scores of other customers that aren’t so loyal.</p>
+<p><img src="images/clipboard-2959740813.png" class="img-fluid"></p>
 </section>
 <section id="product-recommendation-system" class="level5">
 <h5 class="anchored" data-anchor-id="product-recommendation-system">Product Recommendation System</h5>
 <p>For the recommendation system, Collaborative Filtering techniques were adopted. This technique is generally used to predict user preferences based on the preferences of similar users, based on their segments, such as by RFM, geolocation, etc.</p>
 <p>We split the provided data into an 80/20 training/test split and trained our model. We tested to see if the accuracy of the recommendations on the ‘unseen’ data and discovered a 20% improvement in precision compared to more traditional models.</p>
-
-
+<p><img src="images/clipboard-1979477919.png" class="img-fluid"></p>
+</section>
+<section id="market-basket-analysis" class="level5">
+<h5 class="anchored" data-anchor-id="market-basket-analysis">Market Basket Analysis</h5>
+<p>Market Basket Analysis allowed us to identify strong product associations with several supporting metrics such as confidence, lift, and support. These metrics allowed us to gain a better idea of the product association, rather than just identifying the co-occurences of the products.</p>
+<p>We were able to identify the likelihood that product A is purchased given product B is in the basket, and vice versa. The model we created allowed us to set thresholds based on which we see product associations that are stronger than the set threshold only.</p>
+<p>These details allow the team at Escentials to create better promotions, such as discounts when product A and B are purchased together, then you get a 5% discount.</p>
+<p><img src="images/clipboard-1844049376.png" class="img-fluid"></p>
 </section>
 </section>
+</section>
+<section id="conclusion" class="level3">
+<h3 class="anchored" data-anchor-id="conclusion">Conclusion</h3>
+<p>To wrap up the project, Arjun had the opportunity to present his findings and his model in front of the team from Escentials. We had an interactive session where they were able to learn more about our model as well. A comprehensive report was developed detailing our findings, our code, and methodology.</p>
+<p>If you have any queries, or would like to know more, feel free to send me a message via LinkedIn or Email!</p>
+
+
 </section>
 </section>
 
