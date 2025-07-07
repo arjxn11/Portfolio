@@ -6,9 +6,9 @@ website:
   site-url: "https://arjxn11.netlify.app"
   navbar:
     left:
-      - href: "/index.html"
+      - href: index.qmd
         text: Home Page
-      - href: "/exp.html"
+      - href: "portfolio/exp.html"
         text: Education and Experience
   page-footer:
     center: "© 2025 Arjun Singh"
