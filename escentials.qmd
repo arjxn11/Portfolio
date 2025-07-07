@@ -22,3 +22,19 @@ At the start of every data science project comes the data preprocessing step. Cl
 With transactional data and the vast amount of rows, there is a lot of false data rows, fake names, fake emails, different formats for names and more, so the first thing we did was to ensure that the data was standard across and removed null rows, rows with \$00.00 purchase value etc.
 
 #### Analytical Methods
+
+##### Exploratory Data Analysis
+
+After data cleaning, the first thing done was some exploratory analysis to gain a better idea of the customer base of the company and how well they perform with regards to customer retention.
+
+##### Customer Segmentation
+
+The customers were segmented using RFM (Recency, Frequency, Monetary) segmentation techniques. This technique splits users and gives them different scores on a scale from 1-5 based on how recently they made their last purchase, how often they purchase, and how much money they have spent with the company in the past. This is then combined to generate different bands, such as 555 for the most loyal customers, and 111 for the customers with the least scores in each department.
+
+Using this, Arjun was able to generate insights for the team at Escentials, identifying the most common products being purchased by the most loyal customers, understanding the frequency of it, and presenting it to the team at Escentials. Information like this allows them to create better informed marketing strategies to improve the RFM scores of other customers that aren't so loyal.
+
+##### Product Recommendation System
+
+For the recommendation system, Collaborative Filtering techniques were adopted. This technique is generally used to predict user preferences based on the preferences of similar users, based on their segments, such as by RFM, geolocation, etc.
+
+We split the provided data into an 80/20 training/test split and trained our model. We tested to see if the accuracy of the recommendations on the 'unseen' data and discovered a 20% improvement in precision compared to more traditional models.
