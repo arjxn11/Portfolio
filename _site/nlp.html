@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>About – Portfolio</title>
+<title>TripAdvisor Reviews: NLP Approach – Portfolio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,40 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -164,15 +130,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#the-project" id="toc-the-project" class="nav-link active" data-scroll-target="#the-project">The Project</a></li>
+  <li><a href="#methodology-and-implementation" id="toc-methodology-and-implementation" class="nav-link" data-scroll-target="#methodology-and-implementation">Methodology and Implementation</a></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
+<h1 class="title">TripAdvisor Reviews: NLP Approach</h1>
 </div>
 
 
@@ -189,15 +164,128 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>About this site</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
-</div>
-</div>
+<section id="the-project" class="level2">
+<h2 class="anchored" data-anchor-id="the-project">The Project</h2>
+<p>With dining contributing up to 50% of hotel revenue in India, customer sentiment toward hotel restaurants plays a critical role in business success. This project analyzed <strong>147,581 TripAdvisor reviews</strong> from hotel restaurants in New Delhi using advanced NLP techniques to extract <strong>actionable insights</strong> about food quality, service, pricing, and ambiance. The goal was to help hospitality businesses identify pain points, improve customer experience, and refine strategic positioning.</p>
+</section>
+<section id="methodology-and-implementation" class="level2">
+<h2 class="anchored" data-anchor-id="methodology-and-implementation">Methodology and Implementation</h2>
+<ul>
+<li><p><strong>Sentiment Classification</strong></p>
+<ul>
+<li><p>Models Used: RoBERTa (transformer-based), VADER (lexicon-based)</p></li>
+<li><p><strong>RoBERTa</strong> was fine-tuned using a <strong>balanced subset of ~12,000 reviews</strong> and achieved <strong>~80% accuracy</strong>, outperforming raw star ratings in detecting nuanced and mixed-sentiment reviews.</p></li>
+<li><p>VADER was used in tandem to support aspect-level analysis due to its interpretability.</p></li>
+</ul></li>
+<li><p><strong>Topic Modeling (LDA)</strong></p>
+<ul>
+<li><p>Performed separately on positive and negative reviews to reduce topic overlap.</p></li>
+<li><p>Topics uncovered included <strong>“Cold Food,” “Rude Staff,” “Overpriced Items,”</strong> and <strong>“Clean Ambiance.”</strong></p></li>
+</ul></li>
+<li><p><strong>Aspect-Based Sentiment Analysis (ABSA)</strong></p>
+<ul>
+<li><p>Aspects (e.g., food, service, price) were matched with sentiment scores.</p></li>
+<li><p>Visualization showed “Service” had the <strong>highest frequency of negative mentions</strong>, often tied to the terms “rude” and “slow.”</p></li>
+</ul></li>
+<li><p><strong>Opinion–Sentiment Triplet Extraction</strong></p>
+<ul>
+<li><p>Combined <strong>PyABSA + spaCy</strong> to extract triplets like <em>(food, tasteless, negative)</em> or <em>(service, excellent, positive)</em>.</p></li>
+<li><p>Focused on <strong>~12,000 negative reviews</strong> to efficiently surface critical insights.</p></li>
+<li><p>Top triplets included:</p>
+<ul>
+<li><p><em>(service, rude, negative)</em> – 125 mentions</p></li>
+<li><p><em>(food, not good, negative)</em> – 84 mentions</p></li>
+<li><p><em>(ambience, dirty, negative)</em> – 43 mentions</p></li>
+</ul></li>
+</ul></li>
+<li><p><strong>Geospatial &amp; Brand Insights</strong></p>
+<ul>
+<li><p>Price perception heatmaps revealed <strong>Taj and Sheraton</strong> as consistently labeled “expensive.”</p></li>
+<li><p>Areas like <strong>Connaught Place</strong> had more “affordable” mentions.</p></li>
+<li><p><strong>Chicken dishes</strong> dominated food-related complaints, especially <em>grilled chicken</em> labeled as “cold” or “bland.”</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="results" class="level2">
+<h2 class="anchored" data-anchor-id="results">Results</h2>
+<ul>
+<li><p><strong>Sentiment Distribution</strong> (RoBERTa classified):</p>
+<ul>
+<li><p>Positive: <strong>74.7%</strong></p></li>
+<li><p>Neutral: <strong>17.3%</strong></p></li>
+<li><p>Negative: <strong>8%</strong></p></li>
+<li><p>Despite the skew, <strong>negative reviews offered the most actionable insights</strong>.</p></li>
+</ul></li>
+</ul>
+<!-- -->
+<ul>
+<li><p><strong>Error Reduction</strong>:</p>
+<ul>
+<li>RoBERTa corrected misaligned ratings, identifying sentiment mismatch in <strong>dozens of reviews</strong> where a high star rating masked negative text.</li>
+</ul></li>
+</ul>
+<!-- -->
+<ul>
+<li><p><strong>Model Comparison</strong> (Appendix C Summary):</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Model</th>
+<th>Accuracy</th>
+<th>Pros</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>RoBERTa</td>
+<td>~0.80</td>
+<td>Strong context handling</td>
+<td>Best for final classification</td>
+</tr>
+<tr class="even">
+<td>VADER</td>
+<td>~0.84*</td>
+<td>Easy to interpret, rule-based</td>
+<td>Best for aspect scoring</td>
+</tr>
+<tr class="odd">
+<td>Logistic Reg.</td>
+<td>~0.70</td>
+<td>Fast and simple</td>
+<td>Baseline model</td>
+</tr>
+<tr class="even">
+<td>Llama 3.1</td>
+<td>N/A</td>
+<td>Context-rich but resource-intensive</td>
+<td>Not used in final pipeline</td>
+</tr>
+</tbody>
+</table></li>
+</ul>
+<!-- -->
+<ul>
+<li><p><strong>Temporal Insights</strong>:</p>
+<ul>
+<li><p>Interest in <em>ambiance</em> and <em>service</em> spiked pre-pandemic.</p></li>
+<li><p>Post-2020, new terms like <em>lockdown</em>, <em>sanitizer</em>, and <em>hygiene</em> surged.</p></li>
+<li><p>Shifted priorities toward <em>safety</em> and <em>value for money</em>.</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>This project successfully translated unstructured reviews into <strong>structured intelligence</strong> through a hybrid NLP pipeline. Our approach enabled fine-grained feedback analysis, helping restaurant managers pinpoint <strong>key operational failures</strong> and <strong>differentiators</strong>. From identifying <strong>specific pain points (e.g., slow staff at expensive outlets)</strong> to spotting <strong>emerging trends in customer expectations</strong>, the model serves as a scalable blueprint for real-time review monitoring in hospitality.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

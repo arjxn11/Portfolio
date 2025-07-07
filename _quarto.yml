@@ -18,8 +18,10 @@ website:
             href: escentials.qmd
           - text: DonorChain- A blockchain solution for Transparency
             href: blockchain.qmd
+          - text: TripAdvisor Reviews, an NLP approach
+            href: nlp.qmd
   page-footer:
-    center: "© 2025 Arjun Singh"
+    center: "© 2025 Arjun Singh, All Rights Reserved."
 
 format:
   html:

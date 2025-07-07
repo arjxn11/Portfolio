@@ -1,0 +1,97 @@
+---
+title: "TripAdvisor Reviews: NLP Approach"
+format:
+  html:
+    css: styles.css 
+---
+
+## The Project
+
+With dining contributing up to 50% of hotel revenue in India, customer sentiment toward hotel restaurants plays a critical role in business success. This project analyzed **147,581 TripAdvisor reviews** from hotel restaurants in New Delhi using advanced NLP techniques to extract **actionable insights** about food quality, service, pricing, and ambiance. The goal was to help hospitality businesses identify pain points, improve customer experience, and refine strategic positioning.
+
+## Methodology and Implementation
+
+-   **Sentiment Classification**
+
+    -   Models Used: RoBERTa (transformer-based), VADER (lexicon-based)
+
+    -   **RoBERTa** was fine-tuned using a **balanced subset of \~12,000 reviews** and achieved **\~80% accuracy**, outperforming raw star ratings in detecting nuanced and mixed-sentiment reviews.
+
+    -   VADER was used in tandem to support aspect-level analysis due to its interpretability.
+
+-   **Topic Modeling (LDA)**
+
+    -   Performed separately on positive and negative reviews to reduce topic overlap.
+
+    -   Topics uncovered included **“Cold Food,” “Rude Staff,” “Overpriced Items,”** and **“Clean Ambiance.”**
+
+-   **Aspect-Based Sentiment Analysis (ABSA)**
+
+    -   Aspects (e.g., food, service, price) were matched with sentiment scores.
+
+    -   Visualization showed “Service” had the **highest frequency of negative mentions**, often tied to the terms “rude” and “slow.”
+
+-   **Opinion–Sentiment Triplet Extraction**
+
+    -   Combined **PyABSA + spaCy** to extract triplets like *(food, tasteless, negative)* or *(service, excellent, positive)*.
+
+    -   Focused on **\~12,000 negative reviews** to efficiently surface critical insights.
+
+    -   Top triplets included:
+
+        -   *(service, rude, negative)* – 125 mentions
+
+        -   *(food, not good, negative)* – 84 mentions
+
+        -   *(ambience, dirty, negative)* – 43 mentions
+
+-   **Geospatial & Brand Insights**
+
+    -   Price perception heatmaps revealed **Taj and Sheraton** as consistently labeled “expensive.”
+
+    -   Areas like **Connaught Place** had more “affordable” mentions.
+
+    -   **Chicken dishes** dominated food-related complaints, especially *grilled chicken* labeled as “cold” or “bland.”
+
+## Results
+
+-   **Sentiment Distribution** (RoBERTa classified):
+
+    -   Positive: **74.7%**
+
+    -   Neutral: **17.3%**
+
+    -   Negative: **8%**
+
+    -   Despite the skew, **negative reviews offered the most actionable insights**.
+
+<!-- -->
+
+-   **Error Reduction**:
+
+    -   RoBERTa corrected misaligned ratings, identifying sentiment mismatch in **dozens of reviews** where a high star rating masked negative text.
+
+<!-- -->
+
+-   **Model Comparison** (Appendix C Summary):
+
+    | Model | Accuracy | Pros | Notes |
+    |----|----|----|----|
+    | RoBERTa | \~0.80 | Strong context handling | Best for final classification |
+    | VADER | \~0.84\* | Easy to interpret, rule-based | Best for aspect scoring |
+    | Logistic Reg. | \~0.70 | Fast and simple | Baseline model |
+    | Llama 3.1 | N/A | Context-rich but resource-intensive | Not used in final pipeline |
+
+<!-- -->
+
+-   **Temporal Insights**:
+
+    -   Interest in *ambiance* and *service* spiked pre-pandemic.
+
+    -   Post-2020, new terms like *lockdown*, *sanitizer*, and *hygiene* surged.
+
+    -   Shifted priorities toward *safety* and *value for money*.
+
+## Conclusion
+
+This project successfully translated unstructured reviews into **structured intelligence** through a hybrid NLP pipeline. Our approach enabled fine-grained feedback analysis, helping restaurant managers pinpoint **key operational failures** and **differentiators**. From identifying **specific pain points (e.g., slow staff at expensive outlets)** to spotting **emerging trends in customer expectations**, the model serves as a scalable blueprint for real-time review monitoring in hospitality.
