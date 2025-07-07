@@ -6,3 +6,5 @@ format:
 ---
 
 ## Overview
+
+This project involved working with the team at LUXASIA, responsible for their brand Escentials, to generate an approach to improve customer retention as well as customer conversion to their online e-commerce platform.
