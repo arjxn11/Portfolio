@@ -106,12 +106,8 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Hedge Fund Simulation</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./proj2.qmd">
- <span class="dropdown-text">Project 2</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./proj3.qmd">
- <span class="dropdown-text">Project 3</span></a>
+    <a class="dropdown-item" href="./escentials.html">
+ <span class="dropdown-text">Escentials SMU-X project</span></a>
   </li>  
     </ul>
   </li>
@@ -131,7 +127,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#hedge-fund-simulation" id="toc-hedge-fund-simulation" class="nav-link active" data-scroll-target="#hedge-fund-simulation">Hedge Fund Simulation</a></li>
+  <li><a href="#hedge-fund-simulation" id="toc-hedge-fund-simulation" class="nav-link active" data-scroll-target="#hedge-fund-simulation">Hedge Fund Simulation</a>
+  <ul class="collapse">
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a></li>
+  <li><a href="#strategy" id="toc-strategy" class="nav-link" data-scroll-target="#strategy">Strategy</a></li>
+  <li><a href="#newsletters-and-pitchbook" id="toc-newsletters-and-pitchbook" class="nav-link" data-scroll-target="#newsletters-and-pitchbook">Newsletters and Pitchbook</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -160,8 +161,36 @@ ul.task-list li input[type="checkbox"] {
 <section id="hedge-fund-simulation" class="level2">
 <h2 class="anchored" data-anchor-id="hedge-fund-simulation">Hedge Fund Simulation</h2>
 <p>As part of his studies, Arjun was given the opportunity to work in a simulated environment and gain hands-on experience on what its like to work at a Hedge Fund and make trading decisions.</p>
+<p>The platform used was Saxo and real market prices were being used (with a 10 minute delay) so that our decisions were made keeping real market conditions and the real world in mind.</p>
+<p>During this 5 week simulation, several real world events took place, from feuds between the President of the US and the CEO of Apple, to conflicts being escalated in different regions of the world. Systems were thoroughly tested to see how they perform in such volatile conditions.</p>
+<section id="results" class="level3">
+<h3 class="anchored" data-anchor-id="results">Results</h3>
+<p>The simulation had the following results:</p>
+<ul>
+<li><p>Total Growth: +9.28%</p></li>
+<li><p>Weeks ended with a positive return: 4/5</p></li>
+<li><p>Total trades: 201</p></li>
+<li><p>Trade ‘win’ percentage: 67%</p></li>
+</ul>
+<p><img src="images/clipboard-641155468.png" class="img-fluid"></p>
+<p>The market benchmark we used was the S&amp;P 500 index. During the 5 week period of simulation, it had a growth of +3.8%. The Hedge Fund, backed by Arjuns strategy outperformed it by well over 200%.</p>
+<p><img src="images/clipboard-3384158915.png" class="img-fluid"></p>
+</section>
+<section id="strategy" class="level3">
+<h3 class="anchored" data-anchor-id="strategy">Strategy</h3>
+<p>Arjun developed and implemented an intraday trading strategy designed to eliminate overnight risk by closing all positions before market close.</p>
+<p>This approach was particularly relevant during periods of heightened geopolitical uncertainty, such as Middle East tensions and tariff-related developments, which frequently triggered significant after-hours volatility.</p>
+<p>This was combined with back-testing data going an year back (sometimes more depending on asset class) to gain a deeper understanding into daily/seasonal market trends and spot high value entry signals. Additionally, Monte-Carlo techniques were used to simulate returns, and the fund was simulated to grow at rate over the market benchmark a majority of the simulations.</p>
+<p>Strong risk management protocols were followed throughout. Pre-determined exit points were determined and followed in order to prevent significant downside exposure as capital preservation was a key focus for the fund. The fund avoided the sunk cost fallacy, and were not afraid to exit positions early if the trend was unfavorable to the position being held by the hedge fund.</p>
+</section>
+<section id="newsletters-and-pitchbook" class="level3">
+<h3 class="anchored" data-anchor-id="newsletters-and-pitchbook">Newsletters and Pitchbook</h3>
+<p>Weekly investor grade newsletters were written to provide the Hedge Funds results and rationale for the week. In this newsletter, the outlook the short and long term based on real world events were also provided.</p>
+<p>To read the pitchbook, click <a href="files/pitchbook.pdf">HERE</a>.</p>
+<p>If you are interested in the newsletters, do not hesitate to reach out!</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
