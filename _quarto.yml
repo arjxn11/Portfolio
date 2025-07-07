@@ -8,8 +8,9 @@ website:
     left:
       - href: index.qmd
         text: Home Page
-      - href: "portfolio/exp.html"
-        text: Education and Experience
+      - text: Education and Experience
+        href: exp.qmd
+        
   page-footer:
     center: "© 2025 Arjun Singh"
 
