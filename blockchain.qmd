@@ -1,0 +1,40 @@
+---
+title: "Blockchain Technology: DonorChain"
+format:
+  html:
+    css: styles.css 
+---
+
+## The Project
+
+This smart contracts used for this project were developed on Solidity.
+
+### Overview 
+
+**DonorChain** is a decentralized charity platform that uses blockchain to enhance transparency, trust, and accountability in the philanthropic sector. It addresses declining donor confidence by enabling full traceability of donations—from donor to beneficiary to purchase—ensuring that every dollar makes a verifiable impact.
+
+### Methodology
+
+#### System Architecture
+
+Built on a hybrid blockchain, DonorChain integrates both on-chain and off-chain components to balance transparency with privacy. It supports key actors (donors, charities, beneficiaries, retailers) via a decentralized application (dApp), with actions verified through smart contracts.
+
+**Smart Contracts Developed**:
+
+-   **Registration Smart Contract** (`CharityRegg.sol`): Handles onboarding and verification of charities via admin approval.
+
+-   **Donation Smart Contract** (`DonateToCharity.sol`): Allows donors to send ETH to verified charities only.
+
+-   **Funds Transfer Smart Contract** (`DonorToBene.sol`): Enables charities to register, verify, and transfer funds to beneficiaries.
+
+-   **Cooperative Store Smart Contract** (`Coop_Store.sol`): Lets beneficiaries purchase goods with ETH and prevents the purchase of blacklisted items.
+
+![](images/clipboard-1006105735.png)
+
+#### Governance
+
+Implemented as a DAO (Decentralized Autonomous Organization) where major decisions—like blacklist rules or new registrations—are voted on by stakeholders, ensuring transparency and inclusiveness.
+
+### Outcome
+
+DonorChain creates a trusted, end-to-end traceable donation experience. From donation to impact, every transaction is visible and verifiable. With strong governance, privacy protections, and real-world applicability, the platform tackles declining donation trends and sets a new standard for digital philanthropy.

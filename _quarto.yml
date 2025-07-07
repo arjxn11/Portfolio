@@ -16,6 +16,8 @@ website:
             href: hedgefund.qmd
           - text: Essentials for Escentials SMU-X
             href: escentials.qmd
+          - text: DonorChain- A blockchain solution for Transparency
+            href: blockchain.qmd
   page-footer:
     center: "© 2025 Arjun Singh"
 
