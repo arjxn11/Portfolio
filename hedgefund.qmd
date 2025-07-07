@@ -1,0 +1,10 @@
+---
+title: "Hedge Fund Simulation"
+format:
+  html:
+    css: styles.css 
+---
+
+## Hedge Fund Simulation
+
+As part of his studies, Arjun was given the opportunity to work in a simulated environment and gain hands-on experience on what its like to work at a Hedge Fund and make trading decisions.

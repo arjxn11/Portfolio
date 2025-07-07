@@ -10,7 +10,14 @@ website:
         text: Home Page
       - text: Education and Experience
         href: exp.qmd
-        
+      - text: Projects
+        menu:
+          - text: Hedge Fund Simulation
+            href: hedgefund.qmd
+          - text: Project 2
+            href: proj2.qmd
+          - text: Project 3
+            href: proj3.qmd
   page-footer:
     center: "© 2025 Arjun Singh"
 
