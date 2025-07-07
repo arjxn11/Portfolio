@@ -9,7 +9,7 @@ format:
 
 This smart contracts used for this project were developed on Solidity.
 
-### Overview 
+### Overview
 
 **DonorChain** is a decentralized charity platform that uses blockchain to enhance transparency, trust, and accountability in the philanthropic sector. It addresses declining donor confidence by enabling full traceability of donations—from donor to beneficiary to purchase—ensuring that every dollar makes a verifiable impact.
 
