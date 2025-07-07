@@ -5,6 +5,20 @@ format:
     css: styles.css 
 ---
 
-## Overview
+## The Project
+
+### Overview
 
 This project involved working with the team at LUXASIA, responsible for their brand Escentials, to generate an approach to improve customer retention as well as customer conversion to their online e-commerce platform.
+
+![](images/clipboard-4213337139.png)
+
+### Methodology
+
+#### Data Preprocessing
+
+At the start of every data science project comes the data preprocessing step. Cleaning up the data off the noise is important and solves 50% of the problem.
+
+With transactional data and the vast amount of rows, there is a lot of false data rows, fake names, fake emails, different formats for names and more, so the first thing we did was to ensure that the data was standard across and removed null rows, rows with \$00.00 purchase value etc.
+
+#### Analytical Methods
