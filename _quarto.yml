@@ -14,7 +14,7 @@ website:
         menu:
           - text: Singhularity Capital- A Hedge Fund Simulation
             href: hedgefund.qmd
-          - text: Essentials for Escentials- SMU-X project
+          - text: Essentials for Escentials- SMU-X
             href: escentials.qmd
   page-footer:
     center: "© 2025 Arjun Singh"

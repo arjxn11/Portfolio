@@ -107,7 +107,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="./escentials.html">
- <span class="dropdown-text">Essentials for Escentials- SMU-X project</span></a>
+ <span class="dropdown-text">Essentials for Escentials- SMU-X</span></a>
   </li>  
     </ul>
   </li>
@@ -173,8 +173,22 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="analytical-methods" class="level4">
 <h4 class="anchored" data-anchor-id="analytical-methods">Analytical Methods</h4>
+<section id="exploratory-data-analysis" class="level5">
+<h5 class="anchored" data-anchor-id="exploratory-data-analysis">Exploratory Data Analysis</h5>
+<p>After data cleaning, the first thing done was some exploratory analysis to gain a better idea of the customer base of the company and how well they perform with regards to customer retention.</p>
+</section>
+<section id="customer-segmentation" class="level5">
+<h5 class="anchored" data-anchor-id="customer-segmentation">Customer Segmentation</h5>
+<p>The customers were segmented using RFM (Recency, Frequency, Monetary) segmentation techniques. This technique splits users and gives them different scores on a scale from 1-5 based on how recently they made their last purchase, how often they purchase, and how much money they have spent with the company in the past. This is then combined to generate different bands, such as 555 for the most loyal customers, and 111 for the customers with the least scores in each department.</p>
+<p>Using this, Arjun was able to generate insights for the team at Escentials, identifying the most common products being purchased by the most loyal customers, understanding the frequency of it, and presenting it to the team at Escentials. Information like this allows them to create better informed marketing strategies to improve the RFM scores of other customers that aren’t so loyal.</p>
+</section>
+<section id="product-recommendation-system" class="level5">
+<h5 class="anchored" data-anchor-id="product-recommendation-system">Product Recommendation System</h5>
+<p>For the recommendation system, Collaborative Filtering techniques were adopted. This technique is generally used to predict user preferences based on the preferences of similar users, based on their segments, such as by RFM, geolocation, etc.</p>
+<p>We split the provided data into an 80/20 training/test split and trained our model. We tested to see if the accuracy of the recommendations on the ‘unseen’ data and discovered a 20% improvement in precision compared to more traditional models.</p>
 
 
+</section>
 </section>
 </section>
 </section>
