@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Essentials for Escentials – Portfolio</title>
+<title>Stock Analyzer – Portfolio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -139,11 +139,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#the-project" id="toc-the-project" class="nav-link active" data-scroll-target="#the-project">The Project</a>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a>
   <ul class="collapse">
-  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#methodology" id="toc-methodology" class="nav-link" data-scroll-target="#methodology">Methodology</a></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  <li><a href="#vwap-and-twap" id="toc-vwap-and-twap" class="nav-link" data-scroll-target="#vwap-and-twap">VWAP and TWAP</a></li>
+  <li><a href="#pe-and-de-ratios" id="toc-pe-and-de-ratios" class="nav-link" data-scroll-target="#pe-and-de-ratios">P/E and D/E Ratios</a></li>
+  <li><a href="#sentiment-analysis" id="toc-sentiment-analysis" class="nav-link" data-scroll-target="#sentiment-analysis">Sentiment Analysis</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -153,7 +153,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Essentials for Escentials</h1>
+<h1 class="title">Stock Analyzer</h1>
 </div>
 
 
@@ -170,53 +170,28 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="the-project" class="level2">
-<h2 class="anchored" data-anchor-id="the-project">The Project</h2>
-<section id="overview" class="level3">
-<h3 class="anchored" data-anchor-id="overview">Overview</h3>
-<p>This project involved working with the team at LUXASIA, responsible for their brand Escentials, to generate an approach to improve customer retention as well as customer conversion to their online e-commerce platform.</p>
-<p><img src="images/clipboard-4213337139.png" class="img-fluid"></p>
+<section id="overview" class="level1">
+<h1>Overview</h1>
+<p><a href="https://analyze-stox.streamlit.app/">This app</a> allows users to input any stock of their choice and retrieve key stock details, such as the Price to Earnings ratio, Debt to Equity Ratio, Sentiments and more. Arjun created this app as it was something that he needed in order to make trading easier for his own personal portfolio. Often, you have to go to many sources, webpages, and deal with loading times and time spent finding data, with this app, he was able to get a quick breakdown of a few key metrics that he looks at when deciding whether to open a position in a stock or not.</p>
+<section id="vwap-and-twap" class="level2">
+<h2 class="anchored" data-anchor-id="vwap-and-twap">VWAP and TWAP</h2>
+<p>These methods are generally used by institutions to evaluate a stock, and their strategy for that stock. VWAP accounts for volume while TWAP does not.</p>
+<p>VWAP (Volume Weighted Average Price) and TWAP (Time Weighted Average Price) are both trading benchmarks used to calculate average prices over a period, but they differ in their weighting methods.&nbsp;VWAP factors in trading volume, giving more weight to prices with higher volume, while TWAP gives equal weight to each time interval regardless of volume.</p>
+<p><img src="images/Screenshot 2025-07-16 104830.png" class="img-fluid">&nbsp;</p>
+<p>The app gives you a chart like the one above, showcasing closing price, VWAP and TWAP, to give you a better understanding of the long term performance of the stock.</p>
 </section>
-<section id="methodology" class="level3">
-<h3 class="anchored" data-anchor-id="methodology">Methodology</h3>
-<section id="data-preprocessing" class="level4">
-<h4 class="anchored" data-anchor-id="data-preprocessing">Data Preprocessing</h4>
-<p>At the start of every data science project comes the data preprocessing step. Cleaning up the data off the noise is important and solves 50% of the problem.</p>
-<p>With transactional data and the vast amount of rows, there is a lot of false data rows, fake names, fake emails, different formats for names and more, so the first thing we did was to ensure that the data was standard across and removed null rows, rows with $00.00 purchase value etc.</p>
+<section id="pe-and-de-ratios" class="level2">
+<h2 class="anchored" data-anchor-id="pe-and-de-ratios">P/E and D/E Ratios</h2>
+<p>The price-to-earnings (P/E) ratio and debt-to-equity (D/E) ratio are two important financial metrics used to assess a company’s valuation and financial health.&nbsp;The P/E ratio indicates how much investors are willing to pay for each dollar of a company’s earnings, while the D/E ratio measures the extent to which a company is financed by debt versus equity.&nbsp;</p>
+<p>A higher P/E ratio suggests investors are willing to pay more for each dollar of earnings, potentially indicating high growth expectations or that the stock is overvalued.&nbsp;A lower P/E ratio may suggest the stock is undervalued or that the company faces risks or weak performance</p>
+<p>A higher D/E ratio indicates a company is more reliant on debt financing, which can increase financial risk.&nbsp;A lower D/E ratio suggests a company is more conservatively financed with equity.&nbsp;</p>
+<p><img src="images/Screenshot 2025-07-16 105141.png" class="img-fluid"></p>
+<p><img src="images/Screenshot 2025-07-16 105149.png" class="img-fluid"></p>
 </section>
-<section id="analytical-methods" class="level4">
-<h4 class="anchored" data-anchor-id="analytical-methods">Analytical Methods</h4>
-<section id="exploratory-data-analysis" class="level5">
-<h5 class="anchored" data-anchor-id="exploratory-data-analysis">Exploratory Data Analysis</h5>
-<p>After data cleaning, the first thing done was some exploratory analysis to gain a better idea of the customer base of the company and how well they perform with regards to customer retention.</p>
-<p>From this we identified the most common age group of customers (26-45) and average age (39). We also identified the most popular products of the brand. Beyond this, we were able to determine the customer retention rate, that is the amount of customers that have purchased more than once. Then, using their customer IDs, we were able to identify the products that returning customers often buy.</p>
-<p>Identifying these details allows the team at Escentials to create better advertising/marketing strategies. For example, they can push the products bought by returning customers more than they do other products, or add discounts for products that customers don’t buy more than once.</p>
-</section>
-<section id="customer-segmentation" class="level5">
-<h5 class="anchored" data-anchor-id="customer-segmentation">Customer Segmentation</h5>
-<p>The customers were segmented using RFM (Recency, Frequency, Monetary) segmentation techniques. This technique splits users and gives them different scores on a scale from 1-5 based on how recently they made their last purchase, how often they purchase, and how much money they have spent with the company in the past. This is then combined to generate different bands, such as 555 for the most loyal customers, and 111 for the customers with the least scores in each department.</p>
-<p>Using this, Arjun was able to generate insights for the team at Escentials, identifying the most common products being purchased by the most loyal customers, understanding the frequency of it, and presenting it to the team at Escentials. Information like this allows them to create better informed marketing strategies to improve the RFM scores of other customers that aren’t so loyal.</p>
-<p><img src="images/clipboard-2959740813.png" class="img-fluid"></p>
-</section>
-<section id="product-recommendation-system" class="level5">
-<h5 class="anchored" data-anchor-id="product-recommendation-system">Product Recommendation System</h5>
-<p>For the recommendation system, Collaborative Filtering techniques were adopted. This technique is generally used to predict user preferences based on the preferences of similar users, based on their segments, such as by RFM, geolocation, etc.</p>
-<p>We split the provided data into an 80/20 training/test split and trained our model. We tested to see if the accuracy of the recommendations on the ‘unseen’ data and discovered a 20% improvement in precision compared to more traditional models.</p>
-<p><img src="images/clipboard-1979477919.png" class="img-fluid"></p>
-</section>
-<section id="market-basket-analysis" class="level5">
-<h5 class="anchored" data-anchor-id="market-basket-analysis">Market Basket Analysis</h5>
-<p>Market Basket Analysis allowed us to identify strong product associations with several supporting metrics such as confidence, lift, and support. These metrics allowed us to gain a better idea of the product association, rather than just identifying the co-occurences of the products.</p>
-<p>We were able to identify the likelihood that product A is purchased given product B is in the basket, and vice versa. The model we created allowed us to set thresholds based on which we see product associations that are stronger than the set threshold only.</p>
-<p>These details allow the team at Escentials to create better promotions, such as discounts when product A and B are purchased together, then you get a 5% discount.</p>
-<p><img src="images/clipboard-1844049376.png" class="img-fluid"></p>
-</section>
-</section>
-</section>
-<section id="conclusion" class="level3">
-<h3 class="anchored" data-anchor-id="conclusion">Conclusion</h3>
-<p>To wrap up the project, Arjun had the opportunity to present his findings and his model in front of the team from Escentials. We had an interactive session where they were able to learn more about our model as well. A comprehensive report was developed detailing our findings, our code, and methodology.</p>
-<p>If you have any queries, or would like to know more, feel free to send me a message via LinkedIn or Email!</p>
+<section id="sentiment-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="sentiment-analysis">Sentiment Analysis</h2>
+<p>This is currently a work in progress. This feature will scrape data from social media sites (primarily Reddit) to gain insights into the overriding customer sentiment with regards to the stock in question.</p>
+<p>Reminder, the app can be found be clicking this link right <a href="https://analyze-stox.streamlit.app/"><strong>HERE</strong></a></p>
 
 
 </section>

@@ -20,6 +20,8 @@ website:
             href: blockchain.qmd
           - text: TripAdvisor Reviews, an NLP approach
             href: nlp.qmd
+          - text: Stock Analyzer
+            href: stocks.qmd
   page-footer:
     center: "© 2025 Arjun Singh, All Rights Reserved."
 

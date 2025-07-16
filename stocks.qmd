@@ -1,0 +1,38 @@
+---
+title: "Stock Analyzer"
+format:
+  html:
+    css: styles.css 
+---
+
+# Overview
+
+[This app](https://analyze-stox.streamlit.app/) allows users to input any stock of their choice and retrieve key stock details, such as the Price to Earnings ratio, Debt to Equity Ratio, Sentiments and more. Arjun created this app as it was something that he needed in order to make trading easier for his own personal portfolio. Often, you have to go to many sources, webpages, and deal with loading times and time spent finding data, with this app, he was able to get a quick breakdown of a few key metrics that he looks at when deciding whether to open a position in a stock or not.
+
+## VWAP and TWAP
+
+These methods are generally used by institutions to evaluate a stock, and their strategy for that stock. VWAP accounts for volume while TWAP does not.
+
+VWAP (Volume Weighted Average Price) and TWAP (Time Weighted Average Price) are both trading benchmarks used to calculate average prices over a period, but they differ in their weighting methods. VWAP factors in trading volume, giving more weight to prices with higher volume, while TWAP gives equal weight to each time interval regardless of volume.
+
+![](images/Screenshot 2025-07-16 104830.png) 
+
+The app gives you a chart like the one above, showcasing closing price, VWAP and TWAP, to give you a better understanding of the long term performance of the stock.
+
+## P/E and D/E Ratios
+
+The price-to-earnings (P/E) ratio and debt-to-equity (D/E) ratio are two important financial metrics used to assess a company's valuation and financial health. The P/E ratio indicates how much investors are willing to pay for each dollar of a company's earnings, while the D/E ratio measures the extent to which a company is financed by debt versus equity. 
+
+A higher P/E ratio suggests investors are willing to pay more for each dollar of earnings, potentially indicating high growth expectations or that the stock is overvalued. A lower P/E ratio may suggest the stock is undervalued or that the company faces risks or weak performance
+
+A higher D/E ratio indicates a company is more reliant on debt financing, which can increase financial risk. A lower D/E ratio suggests a company is more conservatively financed with equity. 
+
+![](images/Screenshot 2025-07-16 105141.png)
+
+![](images/Screenshot 2025-07-16 105149.png)
+
+## Sentiment Analysis
+
+This is currently a work in progress. This feature will scrape data from social media sites (primarily Reddit) to gain insights into the overriding customer sentiment with regards to the stock in question.
+
+Reminder, the app can be found be clicking this link right [**HERE**](https://analyze-stox.streamlit.app/)

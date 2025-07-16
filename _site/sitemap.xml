@@ -1,31 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://arjxn11.netlify.app/nlp.html</loc>
-    <lastmod>2025-07-07T17:24:31.782Z</lastmod>
+    <loc>https://arjxn11.netlify.app/stocks.html</loc>
+    <lastmod>2025-07-16T02:57:30.567Z</lastmod>
   </url>
   <url>
-    <loc>https://arjxn11.netlify.app/hedgefund.html</loc>
-    <lastmod>2025-07-07T08:20:09.743Z</lastmod>
-  </url>
-  <url>
-    <loc>https://arjxn11.netlify.app/escentials.html</loc>
-    <lastmod>2025-07-07T12:48:44.140Z</lastmod>
-  </url>
-  <url>
-    <loc>https://arjxn11.netlify.app/about.html</loc>
-    <lastmod>2025-07-06T09:17:28.747Z</lastmod>
-  </url>
-  <url>
-    <loc>https://arjxn11.netlify.app/blockchain.html</loc>
-    <lastmod>2025-07-07T16:22:02.584Z</lastmod>
+    <loc>https://arjxn11.netlify.app/index.html</loc>
+    <lastmod>2025-07-07T16:41:37.491Z</lastmod>
   </url>
   <url>
     <loc>https://arjxn11.netlify.app/exp.html</loc>
     <lastmod>2025-07-07T16:30:27.086Z</lastmod>
   </url>
   <url>
-    <loc>https://arjxn11.netlify.app/index.html</loc>
-    <lastmod>2025-07-07T16:41:37.491Z</lastmod>
+    <loc>https://arjxn11.netlify.app/blockchain.html</loc>
+    <lastmod>2025-07-07T17:37:13.414Z</lastmod>
+  </url>
+  <url>
+    <loc>https://arjxn11.netlify.app/about.html</loc>
+    <lastmod>2025-07-06T09:17:28.747Z</lastmod>
+  </url>
+  <url>
+    <loc>https://arjxn11.netlify.app/escentials.html</loc>
+    <lastmod>2025-07-07T12:48:44.140Z</lastmod>
+  </url>
+  <url>
+    <loc>https://arjxn11.netlify.app/hedgefund.html</loc>
+    <lastmod>2025-07-07T08:20:09.743Z</lastmod>
+  </url>
+  <url>
+    <loc>https://arjxn11.netlify.app/nlp.html</loc>
+    <lastmod>2025-07-07T17:24:31.782Z</lastmod>
   </url>
 </urlset>
