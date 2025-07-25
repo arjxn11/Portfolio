@@ -141,7 +141,8 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a>
   <ul class="collapse">
-  <li><a href="#vwap-and-twap" id="toc-vwap-and-twap" class="nav-link" data-scroll-target="#vwap-and-twap">VWAP and TWAP</a></li>
+  <li><a href="#the-model" id="toc-the-model" class="nav-link" data-scroll-target="#the-model">The model</a></li>
+  <li><a href="#indicators-vwap-twap-rsi-macd" id="toc-indicators-vwap-twap-rsi-macd" class="nav-link" data-scroll-target="#indicators-vwap-twap-rsi-macd">Indicators (VWAP, TWAP, RSI, MACD)</a></li>
   <li><a href="#pe-and-de-ratios" id="toc-pe-and-de-ratios" class="nav-link" data-scroll-target="#pe-and-de-ratios">P/E and D/E Ratios</a></li>
   <li><a href="#sentiment-analysis" id="toc-sentiment-analysis" class="nav-link" data-scroll-target="#sentiment-analysis">Sentiment Analysis</a></li>
   </ul></li>
@@ -173,12 +174,43 @@ ul.task-list li input[type="checkbox"] {
 <section id="overview" class="level1">
 <h1>Overview</h1>
 <p><a href="https://analyze-stox.streamlit.app/">This app</a> allows users to input any stock of their choice and retrieve key stock details, such as the Price to Earnings ratio, Debt to Equity Ratio, Sentiments and more. Arjun created this app as it was something that he needed in order to make trading easier for his own personal portfolio. Often, you have to go to many sources, webpages, and deal with loading times and time spent finding data, with this app, he was able to get a quick breakdown of a few key metrics that he looks at when deciding whether to open a position in a stock or not.</p>
-<section id="vwap-and-twap" class="level2">
-<h2 class="anchored" data-anchor-id="vwap-and-twap">VWAP and TWAP</h2>
+<section id="the-model" class="level2">
+<h2 class="anchored" data-anchor-id="the-model">The model</h2>
+<p>The landing page for the app is as shown below. This allows the user to enter any ticker they’re interested in as well as alter the date and time intervals between data.</p>
+<p><img src="images/clipboard-859657529.png" class="img-fluid"></p>
+</section>
+<section id="indicators-vwap-twap-rsi-macd" class="level2">
+<h2 class="anchored" data-anchor-id="indicators-vwap-twap-rsi-macd">Indicators (VWAP, TWAP, RSI, MACD)</h2>
 <p>These methods are generally used by institutions to evaluate a stock, and their strategy for that stock. VWAP accounts for volume while TWAP does not.</p>
-<p>VWAP (Volume Weighted Average Price) and TWAP (Time Weighted Average Price) are both trading benchmarks used to calculate average prices over a period, but they differ in their weighting methods.&nbsp;VWAP factors in trading volume, giving more weight to prices with higher volume, while TWAP gives equal weight to each time interval regardless of volume.</p>
-<p><img src="images/Screenshot 2025-07-16 104830.png" class="img-fluid">&nbsp;</p>
-<p>The app gives you a chart like the one above, showcasing closing price, VWAP and TWAP, to give you a better understanding of the long term performance of the stock.</p>
+<p>VWAP (Volume Weighted Average Price) and TWAP (Time Weighted Average Price) are both trading benchmarks used to calculate average prices over a period, but they differ in their weighting methods.&nbsp;VWAP factors in trading volume, giving more weight to prices with higher volume, while TWAP gives equal weight to each time interval regardless of volume.&nbsp;</p>
+<p><img src="images/clipboard-2460655636.png" class="img-fluid"></p>
+<p>The Relative Strength Index (RSI) [second plot in the image above] is a popular technical analysis tool used to evaluate the momentum of price movements in financial markets.&nbsp;It’s an oscillator that fluctuates between 0 and 100, helping traders identify potential overbought or oversold conditions.&nbsp;An RSI above 70 typically suggests overbought conditions, while an RSI below 30 indicates oversold conditions.</p>
+<p>The <strong>MACD (Moving Average Convergence Divergence)</strong> is a popular technical indicator used in trading to identify trends and momentum shifts. It is calculated by subtracting the 26-period Exponential Moving Average (EMA) from the 12-period EMA, producing the <strong>MACD line</strong>. A second line, known as the <strong>signal line</strong>, is the 9-period EMA of the MACD line and serves to smooth out fluctuations. When the MACD line crosses above the signal line, it suggests bullish momentum (a potential buy signal), while a crossover below indicates bearish momentum (a potential sell signal). The <strong>MACD histogram</strong>—the difference between the MACD line and the signal line—is plotted as bars and visually represents the strength of the momentum: increasing bar height shows strengthening momentum, and decreasing bars signal weakening momentum. Additionally, when the MACD line is above zero, it typically indicates upward momentum, while values below zero suggest downward momentum. The MACD is widely used because it combines both trend-following and momentum elements, making it useful for spotting potential entry and exit points in trending markets.</p>
+<p><img src="images/clipboard-8673093.png" class="img-fluid"></p>
+<section id="trend-confirmation-with-ema" class="level4">
+<h4 class="anchored" data-anchor-id="trend-confirmation-with-ema">1. <strong>Trend Confirmation with EMA</strong></h4>
+<p>Use EMA (e.g., 50-day or 200-day) [Shown in plot together with TWAP and VWAP] to identify the <strong>overall trend</strong>:</p>
+<ul>
+<li><p><strong>Price &gt; EMA</strong>: Uptrend (favor long trades)</p></li>
+<li><p><strong>Price &lt; EMA</strong>: Downtrend (favor short trades)</p></li>
+</ul>
+</section>
+<section id="entry-timing-with-macd-signal-line" class="level4">
+<h4 class="anchored" data-anchor-id="entry-timing-with-macd-signal-line">2. <strong>Entry Timing with MACD Signal Line</strong></h4>
+<p>Within the trend:</p>
+<ul>
+<li><p><strong>MACD line crosses above Signal Line</strong> → Bullish signal</p></li>
+<li><p><strong>MACD line crosses below Signal Line</strong> → Bearish signal</p></li>
+</ul>
+</section>
+<section id="momentum-confirmation-with-rsi" class="level4">
+<h4 class="anchored" data-anchor-id="momentum-confirmation-with-rsi">3. <strong>Momentum Confirmation with RSI</strong></h4>
+<p>Confirm with RSI:</p>
+<ul>
+<li><p><strong>Buy entry</strong> if RSI is rising but not yet overbought (e.g., between 30 and 70)</p></li>
+<li><p><strong>Sell/short</strong> if RSI is falling from overbought (&gt;70) or rising from oversold (&lt;30)</p></li>
+</ul>
+</section>
 </section>
 <section id="pe-and-de-ratios" class="level2">
 <h2 class="anchored" data-anchor-id="pe-and-de-ratios">P/E and D/E Ratios</h2>
@@ -191,6 +223,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="sentiment-analysis" class="level2">
 <h2 class="anchored" data-anchor-id="sentiment-analysis">Sentiment Analysis</h2>
 <p>This is currently a work in progress. This feature will scrape data from social media sites (primarily Reddit) to gain insights into the overriding customer sentiment with regards to the stock in question.</p>
+<p>Below is an example of the output shown by the model.</p>
 <p>Reminder, the app can be found be clicking this link right <a href="https://analyze-stox.streamlit.app/"><strong>HERE</strong></a></p>
 
 
