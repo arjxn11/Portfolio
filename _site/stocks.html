@@ -145,6 +145,8 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#indicators-vwap-twap-rsi-macd" id="toc-indicators-vwap-twap-rsi-macd" class="nav-link" data-scroll-target="#indicators-vwap-twap-rsi-macd">Indicators (VWAP, TWAP, RSI, MACD)</a></li>
   <li><a href="#pe-and-de-ratios" id="toc-pe-and-de-ratios" class="nav-link" data-scroll-target="#pe-and-de-ratios">P/E and D/E Ratios</a></li>
   <li><a href="#sentiment-analysis" id="toc-sentiment-analysis" class="nav-link" data-scroll-target="#sentiment-analysis">Sentiment Analysis</a></li>
+  <li><a href="#time-series-model" id="toc-time-series-model" class="nav-link" data-scroll-target="#time-series-model">Time Series Model</a></li>
+  <li><a href="#portfolio-simulation-monte-carlo" id="toc-portfolio-simulation-monte-carlo" class="nav-link" data-scroll-target="#portfolio-simulation-monte-carlo">Portfolio Simulation: Monte Carlo</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -222,8 +224,21 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="sentiment-analysis" class="level2">
 <h2 class="anchored" data-anchor-id="sentiment-analysis">Sentiment Analysis</h2>
-<p>This is currently a work in progress. This feature will scrape data from social media sites (primarily Reddit) to gain insights into the overriding customer sentiment with regards to the stock in question.</p>
+<p>This is currently a work in progress. This feature will scrape data from social media sites (primarily Reddit) to gain insights into the overriding customer sentiment with regards to the stock in question. A FinBERT model is used to generate sentiment scores.</p>
 <p>Below is an example of the output shown by the model.</p>
+<p><img src="images/clipboard-3755646373.png" class="img-fluid"></p>
+</section>
+<section id="time-series-model" class="level2">
+<h2 class="anchored" data-anchor-id="time-series-model">Time Series Model</h2>
+<p>The time series model is currently under construction. Models such as ARIMA and LSTM are being tested.</p>
+</section>
+<section id="portfolio-simulation-monte-carlo" class="level2">
+<h2 class="anchored" data-anchor-id="portfolio-simulation-monte-carlo">Portfolio Simulation: Monte Carlo</h2>
+<p>Users are able to input their portfolio and holdings to simulate returns for the next 30 days, and also back-test their portfolio performance against a situation which would have them have equal holdings in all listed shares.</p>
+<p><img src="images/clipboard-1239069955.png" class="img-fluid"></p>
+<p>The model produces output like below, allowing user to gain a high level overview of portfolio performance and also a forecast of future performance.</p>
+<p><img src="images/clipboard-182223949.png" class="img-fluid"></p>
+<p><img src="images/clipboard-1753067842.png" class="img-fluid"></p>
 <p>Reminder, the app can be found be clicking this link right <a href="https://analyze-stox.streamlit.app/"><strong>HERE</strong></a></p>
 
 

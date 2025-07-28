@@ -29,29 +29,29 @@ The **MACD (Moving Average Convergence Divergence)** is a popular technical indi
 
 ![](images/clipboard-8673093.png)
 
-#### 1. **Trend Confirmation with EMA** 
+#### 1. **Trend Confirmation with EMA**
 
 Use EMA (e.g., 50-day or 200-day) \[Shown in plot together with TWAP and VWAP\] to identify the **overall trend**:
 
--    **Price \> EMA**: Uptrend (favor long trades)
+-   **Price \> EMA**: Uptrend (favor long trades)
 
--    **Price \< EMA**: Downtrend (favor short trades)
+-   **Price \< EMA**: Downtrend (favor short trades)
 
 #### 2. **Entry Timing with MACD Signal Line**
 
 Within the trend:
 
--    **MACD line crosses above Signal Line** → Bullish signal
+-   **MACD line crosses above Signal Line** → Bullish signal
 
--    **MACD line crosses below Signal Line** → Bearish signal
+-   **MACD line crosses below Signal Line** → Bearish signal
 
 #### 3. **Momentum Confirmation with RSI**
 
 Confirm with RSI:
 
--    **Buy entry** if RSI is rising but not yet overbought (e.g., between 30 and 70)
+-   **Buy entry** if RSI is rising but not yet overbought (e.g., between 30 and 70)
 
--    **Sell/short** if RSI is falling from overbought (\>70) or rising from oversold (\<30)
+-   **Sell/short** if RSI is falling from overbought (\>70) or rising from oversold (\<30)
 
 ## P/E and D/E Ratios
 
@@ -76,5 +76,17 @@ Below is an example of the output shown by the model.
 ## Time Series Model
 
 The time series model is currently under construction. Models such as ARIMA and LSTM are being tested.
+
+## Portfolio Simulation: Monte Carlo
+
+Users are able to input their portfolio and holdings to simulate returns for the next 30 days, and also back-test their portfolio performance against a situation which would have them have equal holdings in all listed shares.
+
+![](images/clipboard-1239069955.png)
+
+The model produces output like below, allowing user to gain a high level overview of portfolio performance and also a forecast of future performance.
+
+![](images/clipboard-182223949.png)
+
+![](images/clipboard-1753067842.png)
 
 Reminder, the app can be found be clicking this link right [**HERE**](https://analyze-stox.streamlit.app/)
