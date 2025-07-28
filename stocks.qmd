@@ -89,4 +89,6 @@ The model produces output like below, allowing user to gain a high level overvie
 
 ![](images/clipboard-1753067842.png)
 
+In the above forecast graph, you can also see the 5th and 95th percentile (as shaded) and the sharpe ratio is also a metric calculated by the model and produced for user to see.
+
 Reminder, the app can be found be clicking this link right [**HERE**](https://analyze-stox.streamlit.app/)
